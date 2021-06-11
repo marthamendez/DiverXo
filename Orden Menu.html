@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDENAR</title>
+	<link rel="icon" type="image/png" href="logoDiverxo.png"/>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+	background-image: url(fondo.jpg);
+}
+
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #131212;
+}
+
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:rgb(251, 253, 248);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #131212;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #1ca53e;
+    border: 2px solid #1ca53e;
+	border: 2px solid ;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #38d39f;
+	color: #111111;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+/*menu*/
+
+     #logo{
+        margin: auto;
+        height: 250px;
+        width: 320px;
+        text-align: center;
+      }
+ 
+      #logo h1{
+         font-family: 'Pacifico', cursive;
+         font-size: 58px;
+       }
+
+     nav{
+       height: 70px;
+       background-color:#36f17e;
+       text-align: center;
+     }
+ 
+     nav ul{
+        list-style: none;
+        display: inline-block;
+        padding:18px;
+     }
+
+     nav ul{
+         float: left;
+         margin-top: 20px;
+     }
+ 
+     nav ul a {
+         color: white;
+         font-weight: bold;
+         text-decoration: none;
+         font-size: 20px;
+         padding: 18px;
+		 text-align: center;
+     }
+ 
+     nav ul a:hover{
+		background-color: #1ca53e;
+       border-radius: 60px;
+       width: 180px;
+       padding: 10px;
+     }
+	 .boton_personalizado{
+    text-decoration: none;
+    margin-left: 1%;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#048654;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }
+
+</style>
+<body>
+	<br><a href="index.html" class="boton_personalizado">PÁGINA PRINCIPAL</a>
+	<header>
+		 <div id="logo">
+           <img src="crab.png" alt="">
+           <h1>DiverXo</h1><br><br><br>
+		   <a href="compra.html" class="boton_personalizado">COMPRAR</a>
+        </div>
+
+<div class="container-card">
+<div class="card">
+<figure>
+	<img src="https://pngimage.net/wp-content/uploads/2018/06/logo-menu-png-7.png" >
+</figure>
+<div class="contenido-card">
+	<h3>MENÚ FIT</h3>
+	<p>2243-1997 / 3118-2157</p>
+	<a href="MENU FIT.html">VER</a>
+</div>
+</div>
+<div class="card">
+<figure>
+	<img src="https://pngimage.net/wp-content/uploads/2018/06/logo-menu-png-7.png">
+</figure>
+<div class="contenido-card">
+	<h3>MENÚ FAT</h3>
+	<p>2243-1997 / 3118-2157</p>
+	<a href="MENU FAT.html">VER</a>
+</div>
+</div>
+<div class="card">
+<figure>
+	<img src="https://pngimage.net/wp-content/uploads/2018/06/logo-menu-png-7.png">
+</figure>
+<div class="contenido-card">
+	<h3>¡ARMA TU BOWL!
+	</h3>
+	<p>2243-1997 / 3118-2157</p>
+	<a href="ARMA tu bowel.html">VER</a>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Menú DiverXo</title>
+  <link rel="icon" type="image/png" href="logoDiverxo.png"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&family=Quicksand&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Oxygen&family=Playfair+Display&family=Quicksand&family=Raleway&family=Ubuntu:wght@300&display=swap');
+
+    *{
+  padding: 0;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+    backdrop-filter: blur(6px);
+    padding: 50px;
+}
+a{
+  color: black;
+  margin-left: 100px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+  float: left;
+  position: relative;
+
+  border: 2px solid green;
+  border-radius: 5px;
+  background-color: lightgreen;
+}
+
+header{
+  padding-bottom: 50px;
+}
+
+a:hover{
+  background-color: green;
+  border: 5px solid black;
+}
+.logo{
+  float: right;
+  width: 250px;
+}
+
+.container{
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+}
+
+
+.item{
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
+  
+  transition: all 300ms;
+  
+  position: relative;
+}
+
+
+.item::after {
+  content: "";
+  background-color: rgba(202, 155, 24, 0.1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: scale(0);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.item:hover:after{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item-text{
+  padding: 1em;
+}
+
+
+.item-img{
+  max-width: 100%;
+  display: block;
+  align-items: center;
+}
+
+h3{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #13DB0F;
+}
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3em;
+  color: #069C54;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  color: green;
+    }
+h1::after{
+  content: '';
+  color: black;
+  height: 3px;
+  position: absolute;
+
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+.precio{
+  padding: 2px;
+  border-bottom: 2px solid black ;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0px;
+}
+.collection{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 500px;
+    grid-gap: 50px;
+    justify-content: center;
+}
+article{
+    padding-top: 55px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
+    overflow: auto;
+
+    transition: all 300ms;
+
+    position: relative;
+}
+article::after{
+    content: "";
+    background-color: rgba(37, 240, 11, 0.1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    opacity: 0;
+}
+article:hover:after{
+    opacity: 1;
+    transform: scale(1)
+}
+article:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 590px) {
+
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+}
+.collection{
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+
+@media screen and (min-width: 960px) {
+  
+  .container{
+    grid-template-columns: repeat(3, 1fr);
+}
+.collection{
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+[class*='col-']{
+          padding: 15px;
+        }
+
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+
+       @media only screen and (min-width:600px){
+        .col-m-1{width: 8.33%;}
+        .col-m-2{width: 16.66%;}
+        .col-m-3{width: 25%;}
+        .col-m-4{width: 33.33%;}
+        .col-m-5{width: 41.66%;}
+        .col-m-6{width: 50%;}
+        .col-m-7{width: 58.33%;}
+        .col-m-8{width: 66.66%;}
+        .col-m-9{width: 75%;}
+        .col-m-10{width: 83.33%;}
+        .col-m-11{width: 91.66%;}
+        .col-m-12{width: 100%;}  
+      }
+      @media only screen and (min-width:768px){
+        .col-g-1{width: 8.33%;}
+        .col-g-2{width: 16.66%;}
+        .col-g-3{width: 25%;}
+        .col-g-4{width: 33.33%;}
+        .col-g-5{width: 41.66%;}
+        .col-g-6{width: 50%;}
+        .col-g-7{width: 58.33%;}
+        .col-g-8{width: 66.66%;}
+        .col-g-9{width: 75%;}
+        .col-g-10{width: 83.33%;}
+        .col-g-11{width: 91.66%;}
+        .col-g-12{width: 100%;} 
+        } 
+
+        .boton_personalizado{
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #048654;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }
+
+  .home__img{
+  width: 150px;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  display: block;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="boton_personalizado">PÁGINA PRINCIPAL</a><br>
+    </nav>
+  </header>
+<h1 class="lines-effect col-12 col-m-12 col-g-12">MENÚ FIT</h1>
+  
+  <div class="container">
+    <div class="item">
+      <img src="https://lossaboresdemexico.com/wp-content/uploads/2017/01/Receta-Ensalada-Mexicana-con-aderezo-de-yogurt-cilantro-y-limo%CC%81n.jpg" alt="" class="item-img"> 
+      <div class="item-text">
+        <h3>Ensalada Mexical</h3>
+        <p>Mix de lechugas, Queso ahumado a la plancha, Maíz dulce salteado con cebolla roja, Tomate cereza, Aguacate picado, Dressing de naranja agria y mostaza.</p>
+        <div class="precio">L.130.00</div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="https://i.postimg.cc/sgWYpKRh/Opera-Captura-de-pantalla-2021-06-06-202731-www-facebook-com.png" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Proteína Fit</h3>
+        <p>Garbanzo y zanahoria, Maíz dulce salteado con cebolla roja, Huevo duro, Tocino, Ensalada de repollo, Dressing de yoghurt griego y hierbas.</p>
+        <div class="precio">L125.00</div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="images/Ensalada Rostizada.jpeg" alt="ensros" class="item-img">
+      <div class="item-text">
+        <h3>Ensalada Rostizada</h3>
+        <p>Mix de lechugas, Hongos salteados, Remolacha rostizada, Arveja salteada, Cacahuates tostados, Dressing de cebolla caramelizada y limón.</p> <br><br>
+        <div class="precio">L140.00</div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="https://www.goredforwomen.org/-/media/aha/recipe/recipe-images/roastedcarrotsbeetsandredonionwedgessized.jpg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Proteína Vegana</h3>
+        <p>Garbanzo y zanahoria, Remolacha rostizada, Camote glaseado, Maíz dulce salteado con cebolla roja, Tomate cereza, Cilantro y cebollina, Cacahuate tostado, Dressing de naranja agria y mostaza.</p>
+        <div class="precio">L.150.00</div>
+      </div>
+    </div>
+    
+    
+    <div class="item">
+      <img src="images/pommo.png" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Pasta Gluten Free Pommo D´oro</h3>
+        <p>Pasta gluten free, Salsa pommo d´oro, Hongos salteados, Arvejas salteadas, Perejil.</p><br><br>
+        <div class="precio">L135.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/Quinoa Vegana.jpeg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Quinoa Vegana</h3>
+        <p>Quinoa con frijoles rojos, Camote glaseado, Remolacha rostizada, Aguacate picado, Cilantro y cebollina, Dressing de cebolla caramelizada y limón.</p> 
+        <div class="precio">L125.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/dirty keto.jpeg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Dirty Keto</h3>
+        <p>Pollo con hierbas a la parrilla o Costilla de Cerdo Frita, Brocoli salteado, Coliflor salteado, Arvejas salteadas, Queso cheddar rayado, Tocino, Aguacate, Tomate cereza, Dressing de naranja agria y cereza.</p><br><br><br><br><br>
+        <div class="precio">L195.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/vegan keto.jpeg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Vegan Keto</h3>
+        <p>Hongos salteados, Brocoli salteado, Coliflor salteado, Arvejas salteadas, Aguacate, Tomate cereza, Ensalada de repollo, Dressing de cebolla caramelizada y limón.</p>
+        <div class="precio">L170.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/barbacoa.jpg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Ensalada Barbacoa </h3>
+        <p>Dos pechugas de pollo, unas hojas de lechuga, un jitomate maduro, 100g de queso mozzarella, un cuarto de cebolla, media taza de puré de jitomate, una cucharada de mostaza, una cucharada de miel, media cucharada de salsa inglesa (Worcestershire), sal y pimienta negra molida.</p>
+        <div class="precio">L100.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/pescado.jpg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Ensalada con Pescado</h3>
+        <p>Escarola
+          Corazón de lechuga romana,
+          Unos cuantos canónigos,
+          2 aguacates,
+          2 filetes de pescado sin espina (panga),
+          Aceitunas,
+          Pimientos del piquillo,
+          Aceite de oliva virgén,
+          Sal,
+          Vinagre de módena.</p>
+        <div class="precio">L170.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/espinacas.jpg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Ensalada de Espinacas</h3>
+        <p>Vinagre,
+          Mostaza,
+         Jugo MAGGI,
+         Espinaca,
+         Zanahoria,
+         Nuez,
+         Pasas remojadas, 
+         Aceite de maíz.</p>
+        <div class="precio">L170.00</div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="lines-effect col-12 col-m-12 col-g-12">MENÚ FAT</h1>
+
+  <div class="container">
+    <div class="item">
+      <img src="https://previews.123rf.com/images/robynmac/robynmac1110/robynmac111000026/10906246-barbacoa-costillas-de-cerdo-con-arroz-y-verduras-asi%C3%A1ticas-.jpg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Asian Arroz con Costillas</h3>
+        <p>Arroz frito asiático, Costilla de cerdo frita, Brócoli salteado, Arvejas salteadas, Cilantro y cebollina, Cacahuates tostados, Dressing asiático de jengibre.</p>
+        <div class="precio">L150.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://media.sube.la/media/3103/products/gJPywTkAGf.JPG" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Orange Pork Bites</h3>
+        <p>Arroz frito blanco asiático, Bites de cerdo empanizado, Salsa asiática de naranja, Brócoli salteado, Cilantro y cebollina.</p><br>
+        <div class="precio">L145.00</div>
+      </div>
+
+    </div>
+
+    <div class="item">
+      <img src="https://www.recetasparavivirmejor.com/wp-content/uploads/2021/03/recetas_para_vivir_mejor_alitas_de_coliflor_vegetarianas_2021.jpg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Asian Arroz Con Alitas de Coliflor</h3>
+        <p>Arroz frito asiático, Alitas de coliflor, Brócoli salteado, Arvejas salteadas, Cilantro y cebollina, Cacahuates tostados, Dressing asiático de jengibre.</p><br><br>
+        <div class="precio">L145.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://i.ytimg.com/vi/2H_eOCVwFkA/maxresdefault.jpg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Orange Chicken Bites</h3>
+        <p>Arroz frito blanco asiático, Muslo de pollo empanizado, Salsa asiática de naranja, Brócoli salteado, Cilantro y cebollina.</p><br><br><br><br><br><br><br>
+        <div class="precio">L125.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://media.istockphoto.com/photos/fried-chicken-mac-n-cheese-picture-id497515262" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Mac ´N´ Chick</h3>
+        <p>Pasta coditos, Salsa de queso cheddar, Muslo de pollo empanizado, Brócoli salteado, Miga de pan de ajo, Tocino, Perejil.</p><br><br><br><br><br>
+        <div class="precio">L175.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://i.pinimg.com/originals/c0/5c/cc/c05ccca06cc1fe3ff143606f6c1384bd.jpg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Mac ´N´ Rib</h3>
+        <p>Pasta coditos, Salsa de queso cheddar, Costilla de cerdo frita, Brócoli salteado, Miga de pan de ajo, Tocino, Perejil.</p>
+        <div class="precio">L175.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://cocinamia.com.mx/wp-content/uploads/2020/02/a-50-2-1100x500.png" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Pasta Alfredo</h3>
+        <p>Pasta penne, Salsa alfredo, Pollo con hierbas a la parrilla, Brócoli, Perejil, Tocino, Miga de pan de ajo.</p><br><br><br><br><br><br>
+        <div class="precio">L175.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://d9hyo6bif16lx.cloudfront.net/live/img/production/detail/menu/lunch-dinner_entrees_new-england-fish-n-chips.jpg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Fish ´N´ Chips</h3>
+        <p>Papas fritas, Pescado empanizado, Ensalada de repollo, Aderezo rosado, Dressing de yoghurt y hierbas, Perejil.</p><br><br><br><br>
+        <div class="precio">L150.00</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://www.tqma.com.ec/images/com_yoorecipe/img_preview/cropped-14950.jpg" alt="" class="item-img">
+      <div class="item-text">
+        <h3>Chick ´N´ Chips</h3>
+        <p>Papas fritas, Muslo de pollo empanizado, Ensalada de repollo, Aderezo rosado, Dressing de yoghurt y hierbas, Perejil.</p>
+        <div class="precio">L150.00</div>
+      </div>
+    </div>
+    </div>
+
+    <h1 class="col-12 col-m-12 col-g-12">¡ARMA TU BOWL!</h1>
+
+    <div class="collection">
+      <article>
+          <h3>1. Bases</h3><br>
+          <p>Pasta coditos / Pasta penne / Arroz frito asiático / Mix de lechugas.</p>
+          <div class="precio">L35.00</div><br>
+          <p>Pasta gluten-free / Quinoa con frijol rojo / Papas fritas / Garbanzo y zanahoria.</p>
+          <div class="precio">L45.00</div>
+      </article>
+      <article>
+          <h3>2. Proteinas</h3><br>
+          <p>Pollo con hierbas a la parrilla / Queso ahumado a la parrilla / Alitas de coliflor empanizadas / Bites de cerdo empanizado.</p>
+          <div class="precio">L35.00</div><br>
+          <p>Muslo de pollo empanizado / Costilla de cerdo frita / Pescado empanizado / Hongos salteados / Filete de pescado con hierbas a la plancha.</p>
+          <div class="precio">L45.00</div><br>
+          <p>Camarones a la plancha / Pechuga de pavo rostizada.</p>
+          <div class="precio">L75.00</div>
+      </article>
+      <article>
+          <h3>Salsas</h3><br>
+          <p>Salsa de tomate pommo d´oro / Aderezo rosado / Salsa asiática de naranja / Dressing asiático de naranja / Dressing de cebolla caramelizada y limón / Dressing de yoghurt y hierbas / Dressing de naranja agria y mostaza.</p>
+          <div class="precio">L15.00</div><br>
+          <p>Salsa de queso cheddar / Salsa alfredo.</p>
+          <div class="precio">L35.00</div>
+      </article>
+      <article>
+          <h3>Toppings</h3><br>
+          <p>Miga de pan de ajo / Cilantro y cebollina / Cacahuate tostado / Tocino / Perejil.</p>
+          <div class="precio">L15.00</div>
+      </article>
+    </div>
+  </div>
+  <img src="logoDiverxo.png" alt="" class="home__img">
+</body>
+</html>

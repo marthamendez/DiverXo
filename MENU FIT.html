@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENÚ FIT</title>
+    <link rel="icon" type="image/png" href="logoDiverxo.png"/>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(fondo.jpg);
+}
+
+.wrap {
+  width: 1100px;
+  margin: 50px auto;
+  display: flex;
+  box-pack: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.tarjeta-wrap {
+  margin: 10px;
+  perspective: 800;
+  perspective: 800;
+}
+
+.tarjeta {
+  width: 300px;
+  height: 350px;
+  background: #72be0f;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+.adelante,
+.atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.adelante {
+  width: 100%;
+}
+
+.atras {
+  transform: rotateY(180deg);
+  transform: rotateY(180deg);
+
+  padding: 15px;
+  display: flex;
+  box-pack: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  text-align: center;
+  color: rgb(247, 245, 245);
+  font-family: "open sans";
+  background: #070706;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+  transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card1 {
+  background-image: url(img/7.jpg);
+  background-size: cover;
+}
+
+.card2 {
+  background-image: url(img/4.jpg);
+  background-size: cover;
+}
+
+.card3 {
+  background-image: url(img/7.jpg);
+  background-size: cover;
+}
+.card4 {
+  background-image: url(img/4.jpg);
+  background-size: cover;
+}
+.card5 {
+  background-image: url(img/7.jpg);
+  background-size: cover;
+}
+.card6 {
+  background-image: url(img/4.jpg);
+  background-size: cover;
+}
+.card7 {
+  background-image: url(img/4.jpg);
+  background-size: cover;
+}
+.card8 {
+  background-image: url(img/4.jpg);
+  background-size: cover;
+}
+.card9 {
+  background-image: url(img/4.jpg);
+  background-size: cover;
+}
+
+/*boton regresar*/
+.boton_personalizado{
+    text-decoration: none;
+    margin-left: 1%;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #048654;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  } 
+
+  .home__img{
+  width: 150px;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  display: block;
+}
+
+</style>
+
+<body>
+  <br>
+  <a href="Orden Menu.html" class="boton_personalizado">Regresar</a> 
+    <div class="wrap">
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card1">
+                    <img src="https://lossaboresdemexico.com/wp-content/uploads/2017/01/Receta-Ensalada-Mexicana-con-aderezo-de-yogurt-cilantro-y-limo%CC%81n.jpg" width="300px" height="350px"> 
+                </div>
+				<div class="atras">
+					<p>ENSALADA MEXICAL
+            L130.00
+          </p>
+				</div>
+			</div>
+		</div>
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card2">
+                    <img src="https://i.postimg.cc/sgWYpKRh/Opera-Captura-de-pantalla-2021-06-06-202731-www-facebook-com.png" width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>PROTEINAS FIT
+            L125.00
+          </p>
+				</div>
+			</div>
+		</div>
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card3">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL8YSj7nnSpposQy-zso2zQqG9_HAvv67DEfNFPQSEZsH_BmH1VYT4imWBrfEzMyh1Qlo&usqp=CAU" width="300px" height="350px">  
+                </div>
+				<div class="atras">
+					<p>ENSALADA ROSTIZADA
+            L140.00
+          </p>
+				</div>
+			</div>
+		</div>
+	</div> 
+  <div class="wrap">
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card4">
+                <img src=" https://www.goredforwomen.org/-/media/aha/recipe/recipe-images/roastedcarrotsbeetsandredonionwedgessized.jpg" width="300px" height="350px"> 
+                </div>
+				<div class="atras">
+					<p>PROTEINA VEGANA 
+            L160.00
+          </p>
+				</div>
+			</div>
+		</div>
+    <div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4nlfoRgvsy8wuB-zqjuQNpywK_39OfnLMSOBT66a0gS-XSoH0JucCFhxSsrOP7-0MFc&usqp=CAU" width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>PASTA (GLUTEN FREE)
+            POMMO D'ORO 
+            L135.00</p>
+				</div>
+			</div>
+		</div>
+    <div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card6">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMs9iDtIlpSUIWBKX5GFZpHpsVl4DdKzFZA&usqp=CAU" width="300px" height="350px">      
+                </div>
+				<div class="atras">
+					<p>QUINOA VEGANA
+             L125.00
+          </p>
+				</div>
+			</div>
+		</div>
+	</div>
+  <div class="wrap">
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card7">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShOKVI49lZDmHL5o7L-7ZyObTdg0JDRNvJBw&usqp=CAU" width="300px" height="350px"> 
+                </div>
+				<div class="atras">
+					<p>DIRTY KETO
+            Con Pollo L185.00
+            Con Costilla L195.00
+          </p>
+				</div>
+			</div>
+		</div> 
+    <div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card8">
+                    <img src=" https://previews.123rf.com/images/robynmac/robynmac1110/robynmac111000026/10906246-barbacoa-costillas-de-cerdo-con-arroz-y-verduras-asi%C3%A1ticas-.jpg" width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>ASIAN QUINOA CON ALITAS DE COLIFLOR
+            L155.00 
+            Con Costilla L165.00
+          </p>
+				</div>
+			</div>
+		</div>
+    <div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card9">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPFdeTPf38gA9nfxGHEvF39QuvTtwQd0hsYf7xNh5jPtlRf58lkKX-FX5c6tOljhSUXUw&usqp=CAU" width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>VEGAN KETO 
+            L170.00
+          </p>
+				</div>
+			</div>
+		</div>
+	</div> 
+  <img src="logoDiverxo.png" alt="" class="home__img">
+</body>
+</html>

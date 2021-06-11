@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d48c20e373.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>COMPRA</title>
+    <link rel="icon" type="image/png" href="logoDiverxo.png"/>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Fjalla One', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            background-image: url(fondo.jpg);
+        }
+        [class*='col-']{
+            float: left;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+        
+        a>i{
+            width: 4%;
+            padding: 25px 15px;
+            float: right;
+            position: relative;
+            top: calc (150px - 50%);
+        } 
+        
+        header{
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 0px;
+            margin: 0px;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+        nav{
+            padding: 10px;
+        }
+        
+        span{
+            padding: 10px 5px;
+            font-size: 1.5em;
+            color: white;
+        }
+        .com img{
+            width: 100%;
+            height: auto;
+        }
+        
+        .row{
+            margin: 0px;
+            padding: 20px;
+        }
+        p{
+            color: DarkOliveGreen;
+        }
+        
+        @media only screen and (min-width:432px){
+            .col-m-1{width: 8.33%;}
+            .col-m-2{width: 16.66%;}
+            .col-m-3{width: 25%;}
+            .col-m-4{width: 33.33%;}
+            .col-m-5{width: 41.66%;}
+            .col-m-6{width: 50%;}
+            .col-m-7{width: 58.33%;}
+            .col-m-8{width: 66.66%;}
+            .col-m-9{width: 75%;}
+            .col-m-10{width: 83.33%;}
+            .col-m-11{width: 91.66%;}
+            .col-m-12{width: 100%;}
+
+            .com img{
+                width: 100%;
+                height: 150px;
+            }
+            
+            p{
+                color: DarkOliveGreen;
+            }
+            
+        }    
+        @media only screen and (min-width:775px){
+            .col-g-1{width: 8.33%;}
+            .col-g-2{width: 16.66%;}
+            .col-g-3{width: 25%;}
+            .col-g-4{width: 33.33%;}
+            .col-g-5{width: 41.66%;}
+            .col-g-6{width: 50%;}
+            .col-g-7{width: 58.33%;}
+            .col-g-8{width: 66.66%;}
+            .col-g-9{width: 75%;}
+            .col-g-10{width: 83.33%;}
+            .col-g-11{width: 91.66%;}
+            .col-g-5{width: 100%;}
+            .row{
+                margin-left: 10%;
+                margin-right: 10%;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .con{
+                height: 570px;
+                padding: 20px 15px;
+                border-bottom: 1px solid black;
+                padding-top: 40px;
+            }
+            .con img{
+                width: 100%;
+                height: 380px;
+                width: 230px;
+    height: 200px;
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    display: block;
+            }
+            
+            p{
+                color: DarkOliveGreen;
+            }
+            
+        }
+        .row::after{
+            content: '';
+            display: table;
+            clear:both;
+            padding-left: 40px;
+          }
+        .sub{
+            margin-top: 30px;
+            margin-left: 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #492003;
+        }
+        footer nav a img {
+            width: 30px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            float: right;
+            position: relative;
+            top: calc (150px - 50%);
+        }
+        h6{
+            text-align: left;
+            padding: 0px;
+        }
+        .com div img{
+            padding: 3px;
+            border-radius: 5px;
+            background-color: #f5f4ef8e;
+            width: 15%;
+            height: auto; 
+            right: 0px;
+            float: right;
+            display: flex;
+            position: relative;
+            bottom: 35px;
+            z-index: 1;
+        }
+        .com div img:hover{
+            width: 50px;
+            height: auto;
+            box-shadow: 0px 0px 10px #cfc687;
+        }
+        h1{
+        text-align: center;
+        color: #048654
+        }
+
+        h2{
+        text-align: center;
+        color: #113628
+        }
+
+        img.post {
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    padding-left: 40px;
+    
+}
+
+.home__img{
+  width: 150px;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  display: block;
+}
+
+/*boton regresar*/
+.boton_personalizado{
+    text-decoration: none;
+    margin-left: 1%;
+    padding: 10px;
+    padding-top: 30px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#048654;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  } 
+    </style>
+</head>
+<body>
+    <a href="Orden Menu.html" class="boton_personalizado">Regresar</a> 
+    <img src="logoDiverxo.png" alt="" class="home__img">
+        <div>
+            <h2>COMPRA</h2><br>
+        </div>
+    </header>
+    <div class="col'12 esp">
+        <h1>COMIDA FIT</h1>
+    </div>
+    <div class="row">
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://lossaboresdemexico.com/wp-content/uploads/2017/01/Receta-Ensalada-Mexicana-con-aderezo-de-yogurt-cilantro-y-limo%CC%81n.jpg"><i>Ensalada Mexical</i><p>L.130.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://i.postimg.cc/sgWYpKRh/Opera-Captura-de-pantalla-2021-06-06-202731-www-facebook-com.png"><i>Proteína Vegana</i><p>L.150.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="images/Ensalada Rostizada.jpeg"><i>Ensalada Rostizada</i><p>L.140.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://www.goredforwomen.org/-/media/aha/recipe/recipe-images/roastedcarrotsbeetsandredonionwedgessized.jpg"><i>Proteína Vegana</i><p>L.150.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="images/pommo.png"><i>Pasta Gluten Free</i><p>L.135.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="images/Quinoa Vegana.jpeg"><i>Quinoa Vegana</i><p>L.125.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="images/dirty keto.jpeg"><i>Dirty Keto</i><p>L.195.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="images/vegan keto.jpeg"><i>Vegan Keto</i><p>L170.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="images/barbacoa.jpg"><i>Ensalada Barbacoa</i><p>L.130.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="images/pescado.jpg"><i>Ensalada con Pescado</i><p>L.170.00</p><br><div><a href="reserva.html><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="images/espinacas.jpg"><i>Ensalada de Espinacas</i><p>L.170.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+    </div>
+
+
+    <div class="col'12 esp">
+        <h1>COMIDA FAT</h1>
+    </div>
+    <a name="Ca"></a>
+    <div class="row">
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://previews.123rf.com/images/robynmac/robynmac1110/robynmac111000026/10906246-barbacoa-costillas-de-cerdo-con-arroz-y-verduras-asi%C3%A1ticas-.jpg"><i>Asian Arroz con Costillas</i><p>L.150</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://media.sube.la/media/3103/products/gJPywTkAGf.JPG"><i>Orange Pork Bites</i><p>L.145.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://www.recetasparavivirmejor.com/wp-content/uploads/2021/03/recetas_para_vivir_mejor_alitas_de_coliflor_vegetarianas_2021.jpg"><i>Arroz Con Alitas de Coliflor</i><p>L.145.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://i.ytimg.com/vi/2H_eOCVwFkA/maxresdefault.jpg"><i>Orange Chicken Bites</i><p>L125.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://media.istockphoto.com/photos/fried-chicken-mac-n-cheese-picture-id497515262" alt="" class="item-img"><i>Mac ´N´ Chick</i><p>L.175.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://i.pinimg.com/originals/c0/5c/cc/c05ccca06cc1fe3ff143606f6c1384bd.jpg"><i>Mac ´N´ Rib</i><p>L.175.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://cocinamia.com.mx/wp-content/uploads/2020/02/a-50-2-1100x500.png"><i>Pasta Alfredo</i><p>L.175.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://d9hyo6bif16lx.cloudfront.net/live/img/production/detail/menu/lunch-dinner_entrees_new-england-fish-n-chips.jpg"><i>Fish ´N´ Chips</i><p>L.150.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><img src="https://www.tqma.com.ec/images/com_yoorecipe/img_preview/cropped-14950.jpg"><i>Chick ´N´ Chips</i><p>L.150</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+        
+        
+    </div>
+
+    <div class="col'12 esp">
+        <h1>BOWL ARMADOS</h1>
+    </div>
+    <a name="Ca"></a>
+    <div class="row">
+        <div class="col-12 col-m-6 col-g-3 com"><i>Bases<br><br>Pasta coditos<br>Pasta penne<br>Arroz frito asiático<br>Mix de lechugas.</i><p>L.35.00</p><br><div><a href="reserva.html"></a></div></div>
+
+        <div class="col-12 col-m-6 col-g-3 com"><i>Proteinas.<br><br>Pollo con hierbas a la parrilla<br>Queso ahumado a la parrilla<br>Alitas de coliflor empanizadas<br>Bites de cerdo empanizado.</i><p>L.75.00</p><br><div><a href="reserva.html"></a></div></div>
+
+
+        <div class="col-12 col-m-6 col-g-3 com"><i>Toppings<br><br>Miga de pan de ajo<br>Cilantro y cebollina <br>Cacahuate tostado<br>Tocino<br>Perejil.</i><p>L.15.00</p><br><div><a href="reserva.html"></a></div></div>
+
+
+        <div class="col-12 col-m-6 col-g-3 com"><i>Salsas.<br><br>Salsa de tomate pommo d´oro<br>Aderezo rosado <br>Salsa asiática de naranja<br> Dressing asiático de naranja<br>Dressing de cebolla caramelizada y limón<br>Dressing de yoghurt y hierbas<br>Dressing de naranja agria y mostaza.</i><p>L.35.00</p><br><div><a href="reserva.html"><img src="carrito_de_compras.png" class="post"></a></div></div>
+    </div>
+
+    <img src="logoDiverxo.png" alt="" class="home__img">
+
+</body>
+</html>

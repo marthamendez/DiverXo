@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación</title>
+    <link rel="icon" type="image/png" href="logoDiverxo.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(fondo.jpg);
+        }
+        h1{
+            color: #C7D1CC;
+            text-align: center;
+        }     
+        [class*='col-']{
+          float:left;
+          padding: 15px; 
+        }
+        .row::after{
+          content: '';
+          display: table;
+          clear: both;
+        }
+        /*celulares*/
+        @media only screen and (min-width:300px){
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+        .container{
+            width: 100%;
+            height: 500%;
+        }
+    }
+
+        /*tablet*/
+        @media only screen and (min-width:432px){
+          .col-m-1{width: 8.33%;}
+          .col-m-2{width: 16.66%;}
+          .col-m-3{width: 25%;}
+          .col-m-4{width: 33.33%;}
+          .col-m-5{width: 41.66%;}
+          .col-m-6{width: 50%;}
+          .col-m-7{width: 58.33%;}
+          .col-m-8{width: 66.66%;}
+          .col-m-9{width: 75%;}
+          .col-m-10{width: 83.33%;}
+          .col-m-11{width: 91.66%;}
+          .col-m-12{width: 100%;}
+          .container{
+            width: 100%;
+            height: 500%;
+        }
+        }
+        /*pc*/
+         @media only screen and (min-width:770px){
+          .col-g-1{width: 8.33%;}
+          .col-g-2{width: 16.66%;}
+          .col-g-3{width: 25%;}
+          .col-g-4{width: 33.33%;}
+          .col-g-5{width: 41.66%;}
+          .col-g-6{width: 50%;}
+          .col-g-7{width: 58.33%;}
+          .col-g-8{width: 66.66%;}
+          .col-g-9{width: 75%;}
+          .col-g-10{width: 83.33%;}
+          .col-g-11{width: 91.66%;}
+          .col-g-12{width: 100%;} 
+          .container{
+            width: 100%;
+            height: 500%;
+        }  
+        }
+        .mapa{
+            width: 80%;
+            height: 500px; 
+            border: 2px
+        }
+        .p2{
+            text-align: center;
+            border: 3px double white ;
+            border-radius: 10px;
+        }
+        .container{
+            width: 100%;
+            height: 500%;
+        }
+        .boton_personalizado{
+    text-decoration: none;
+    margin-left: 1%;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #048654;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }
+
+  .home__img{
+  width: 150px;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  display: block;
+}
+        
+    </style>
+<head>
+<body>
+    <br><br><a href="index.html" class="boton_personalizado">Regresar</a>
+    <h1>Ubicación</h1>
+    <div class="container"></div>
+        <div class="col-g-12 col-m-12 col-12">
+            <div class="p2">
+                 <p><i class="fas fa-map-marker-alt"></i>  Avenida Roble, Frente al Mall Multiplaza at Hotel Real InterContinental Tegucigalpa Francisco Morazán, Honduras</p>
+
+                 <p><i class="fas fa-phone"></i> +504 2290-2700</p>
+        
+                 <p><i class="far fa-clock"></i> Abierto ahora: 11:00 de la mañana - 10:00 de la tarde</p>
+            <div>      
+         </div>      
+        <div class="col-g-12 col-m-11 col-12">  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1934.9055316635215!2d-87.18537374319898!3d14.088327882933966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fa2d433be4357%3A0x7d4bd470150e6b9b!2sFactory%20Steak%20%26%20Lobster!5e0!3m2!1ses!2shn!4v1623008472623!5m2!1ses!2shn" class="mapa"></iframe> 
+        <img src="logoDiverxo.png" alt="" class="home__img">
+    </div>  
+
+
+</body>

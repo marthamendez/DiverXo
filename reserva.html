@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMAR ORDEN</title>
+    <link rel="icon" type="image/png" href="logoDiverxo.png"/>
+<head>
+	<style>
+		
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+    [class*='col-']{
+        padding: 15px;
+    }
+    label{
+        font-size: 1rem;
+    }
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+
+
+    :focus{
+        outline: none;
+    }
+
+    body{
+        background-image: url(fondo.jpg);
+        font-family: 'Open sans';
+    }
+
+    .inicio{
+        width: 90%;
+        height: 720px;
+        margin: 60px auto;
+        display: flex;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+    .mesero{
+        position: relative;
+        width: 100px;
+        top: 0;
+        right: 0;
+        float: right;
+    }
+
+    /* Formulario de contacto*/
+    form{
+        padding: 30px 40px;
+    }
+
+    form.orden h2{
+        font-size: 2rem;
+        color: #297934;
+        margin-bottom: 30px;
+    }
+
+    form.orden .informacion{
+        flex-direction: column;
+    }
+
+    form.orden label{
+        font-weight: 600;
+    }
+
+    form.orden input,
+    form.orden textarea{
+        width: 100%;
+        padding: 8px 0px 5px;
+        margin-bottom: 20px;
+
+        border: none;
+        border-bottom: 2px solid #D1D1D1;
+
+        font-family: 'Open sans';
+        color: #5A5A5A;
+        font-size: 14px;
+    }
+
+    form.orden textarea{
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 900px;
+    }
+
+    form.orden input[type="button"]{
+        width: 180px;
+        background: #048654;
+        padding: 10px;
+        border: 2px solid #048654;
+        border-radius: 25px;
+        color: #fff;
+        font-family: 'Open sans';
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    form .orden input[type="button"]:hover{
+        background: #38d39f;
+    }
+    /*boton regresar*/
+    .boton_personalizado{
+        text-decoration: none;
+        padding: 10px;
+        margin-left: 1%;
+        font-weight: 10;
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #048654;
+        border-radius: 10px;
+        border: 2px solid #048654;
+    }
+    .boton_personalizado:hover{
+        color: #38d39f;
+        background-color: #ffffff;
+    } 
+    .home__img{
+    width: 150px;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    display: block;
+    }
+    @media only screen and (min-width:600px){
+        .col-m-1{width: 8.33%;}
+        .col-m-2{width: 16.66%;}
+        .col-m-3{width: 25%;}
+        .col-m-4{width: 33.33%;}
+        .col-m-5{width: 41.66%;}
+        .col-m-6{width: 50%;}
+        .col-m-7{width: 58.33%;}
+        .col-m-8{width: 66.66%;}
+        .col-m-9{width: 75%;}
+        .col-m-10{width: 83.33%;}
+        .col-m-11{width: 91.66%;}
+        .col-m-12{width: 100%;} 
+    }
+
+    @media only screen and (min-width:768px){
+        .col-g-1{width: 8.33%;}
+        .col-g-2{width: 16.66%;}
+        .col-g-3{width: 25%;}
+        .col-g-4{width: 33.33%;}
+        .col-g-5{width: 41.66%;}
+        .col-g-6{width: 50%;}
+        .col-g-7{width: 58.33%;}
+        .col-g-8{width: 66.66%;}
+        .col-g-9{width: 75%;}
+        .col-g-10{width: 83.33%;}
+        .col-g-11{width: 91.66%;}
+        .col-g-12{width: 100%;}
+        .orden{
+            width: 90%;
+            padding: 30px 40px;
+        }
+    } 
+  
+
+	</style>
+<body>
+    <br>
+    <a href="compra.html" class="boton_personalizado">Regresar</a> 
+    <img src="logoDiverxo.png" alt="" class="home__img">
+    <div class="inicio">
+        <form action="" class="orden">
+            <h2>ORDENAR EN LÍNEA</h2>
+            <div class="informacion">
+                <label for="names">Nombres</label>
+                <input type="text" id="nombre">
+
+                <label for="names">Apellidos</label>
+                <input type="text" id="apellido">
+
+                <label for="phone">Telefono / Celular</label>
+                <input type="text" id="phone">
+
+                <label for="fecha">Fecha (entrega de la orden):</label>
+                <input type="date" name="fecha" id="reservacion"><br>
+
+                <label for="comensales">Numero de Comensales</label>
+                <input type="text" name="comensales" id="comensales"><br>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje"></textarea>
+
+                <input type="button" value="Enviar Mensaje">
+        </form>
+    </section>
+</body>
+</html>
